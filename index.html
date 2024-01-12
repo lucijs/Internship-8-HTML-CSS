@@ -9,7 +9,16 @@
 </head>
 <body>
     <h1>HTML Only</h1>
+    
     <nav>
+    <!--
+        <p><dev class="triangle"></dev>Navigation</p>
+        <ul>
+            <li><a href="#WAT">What is this?</a></li>
+            <li><a href="#HOW">How does this work?</a></li>
+            <li><a href="#WHY">But why?</a></li>
+        </ul>
+    -->
         <details>
             <summary>
                 Navigation
@@ -24,14 +33,14 @@
     </nav>
     <hr>
     
-    <header>
+    <header id="WAT">
         <h2>What is this?</h2>
         <p class="text">This page was inspired by a <a href = "https://twitter.com/whitep4nth3r/status/1510568114966171649"><span class="color-to-navy">tweet from Salma</span></a>. Pretty HTML only pages are difficult to make well, and accessible. But here we are. I'm trying my best.</p>
     </header>
 
     <hr>
 
-    <main>
+    <main id="HOW">
         <h2>How does it work?</h2>
         <p class="text">The key to a lot of this is leveraging using tables with a <code>role="presentation"</code> attribute to make decorated sections without css. If you view source on the page, you'll see that there are a LOT of tables. The table tag typically is used to display tabular data and should NOT be used as a layout method. However, since I am not allowed to use CSS, I am pretty much exclusively relying on tables for this purpose. The presentation role tells the browser to not expose the table and its tabluar children in the accessibility tree. This will make it easier to navigate for assistive technology.</p>
     
@@ -46,7 +55,7 @@
 
     <hr>
 
-    <div>
+    <div id="WHY">
         <h2>But Why?</h2>
         <img src="https://c.tenor.com/KjJTBQ9lftsAAAAd/why-huh.gif" alt="Why Huh GIF - Why Huh But Why GIFs">
         <p>I make terrible things. This was an exciting nerd snipe on a sunday, And I took up the challenge!</p>
